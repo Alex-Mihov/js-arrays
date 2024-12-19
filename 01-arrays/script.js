@@ -10,7 +10,8 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = null;
+const fourthTeacher = teachers[3];
+console.log(fourthTeacher)
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 let removedQuinto = teachers.toSpliced(teachers.indexOf('Carlo'), 1, 'Patrick');
@@ -25,11 +26,11 @@ const firstTeacher = teachers.shift();
 console.log(teachers, firstTeacher);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
-let addVanessa = teachers.push('Vanessa');
+const addVanessa = teachers.push('Vanessa');
 console.log(teachers);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
-let addSarah = teachers.unshift('Sarah');
+const addSarah = teachers.unshift('Sarah');
 console.log(teachers);
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
